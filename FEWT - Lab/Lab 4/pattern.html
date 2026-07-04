@@ -7,41 +7,55 @@
 </head>
 <body>
     <script>
-        for(i = 0; i < 4; i++){
-            for(j = 1; j <= 4-i ; j++){
-                document.write(j+" ")
+        for (let i = 0; i < 4; i++) {
+            let row = "";
+    
+            for (let j = 1; j <= 4 - i; j++) {
+                row += j + " ";
             }
+    
+            console.log(row);
+        }
+
+        console.log("<br>")
+        console.log("<br>")
+
+        console.log("Diamond"); 
+
+        for (let i = 0; i < n - 1; i++) { 
+            let row = "";
+    
+            for (let j = 0; j < n - i - 1; j++) { 
+                row += " "; 
+            } 
+    
+            for (let k = 0; k <= i; k++) { 
+                row += "* "; 
+            } 
+    
+            console.log(row);
+        }
+
+        document.write("<br>")
+        document.write("<br>")
+
+        
+        let rows = 5;
+
+        for (let i = 1; i <= rows; i++) {
+            let rowString = "";
             
-            document.write("<br>")
-        }
-
-        document.write("<br>")
-        document.write("<br>")
-
-        for(i = 0; i < 5; i++){
-            for(j = 0; j < 5-i-1; j++){
-                document.write("&nbsp")
-            }
-            for(k = 0; k <= i; k++){
-                document.write("* ")
-            }
-            document.write("<br>")
-        }
-
-        document.write("<br>")
-        document.write("<br>")
-
-        for(i = 0; i < 5; i++){
-            for(j = 1; j <= i ; j++){
-                if(j%2 == 0){
-                    document.write("0")
-                }else{
-                    document.write("1")
+            for (let j = 1; j <= i; j++) {
+                if ((i + j) % 2 === 0) {
+                    rowString += "1 ";
+                } else {
+                    rowString += "0 ";
                 }
             }
             
-            document.write("<br>")
+            console.log(rowString.trim());
         }
+
 
     </script>
 </body>
