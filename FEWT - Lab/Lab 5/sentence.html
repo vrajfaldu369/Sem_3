@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let sentence = ['This', 'is', 'Javascript'];
+    let index = -1;
+
+    let search = prompt("Enter word: ").trim(); 
+
+    for (let i = 0; i < sentence.length; i++) {
+        if (sentence[i].toLowerCase() === search.toLowerCase()) {
+            index = i;
+            break;
+        }
+    }
+
+    if (index != -1) {
+        document.write("Word is found at index: " + index);
+    } else {
+        document.write("Word is not found");
+    }
+</script>
+</body>
+</html>
