@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>primeRange</title>
+</head>
+<body>
+    <script>
+        let start = parseInt(prompt("Enter start point: "))
+        let end = parseInt(prompt("Enter end point: "))
+
+        for(i = start; i <= end; i++){
+            if(i < 2){
+                document.write("prime number")
+            }
+            check = 1;
+
+            for(j = 2; j <= i/2; j++){
+                if(i % j == 0){
+                    check = 0
+                    break;
+                }
+            }
+            if(check == 1){
+                document.write(i+" ")
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!-- WAP in JavaScript to print the GCD of two number. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GCD</title>
+</head>
+<body>
+    <script>
+        let a = parseInt(prompt("Enter a: "))
+        let b = parseInt(prompt("Enter b: "))
+
+        while(b != 0){
+            temp = b;
+            b = a % b
+            a = temp
+        }
+        document.write("GCD = "+a)
+    </script>
+</body>
+</html>

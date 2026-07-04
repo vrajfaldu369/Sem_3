@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>number into word</title>
+</head>
+
+<body>
+    <script>
+        let n = parseInt(prompt("Enter number: "))
+
+        if (isNaN(n)) {
+            document.write("Not a number")
+        }
+        else {
+            if (n < 0 && n > 999) {
+                document.write("Out of Range")
+            }
+            else {
+                ones = ["", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine"]
+                teens = ["Ten", "Eleven", "Twelve", "Thirteen", "Fouteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Ninteen"]
+                tens = ["", "", "Twenty", "Thirty", "Fouty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninty"]
+            }
+        }
+
+        let word = ""
+        if (n >= 100) {
+            word += ones[Math.floor(n / 100)] + " Hundred "
+            n = n % 100
+        }
+        if (n >= 10 && n <= 19) {
+            word += teens[n - 10];
+        } else {
+            word += tens[Math.floor(n / 10)] + " ";
+            word += ones[n % 10];
+        }
+
+        alert(word)
+    </script>
+</body>
+
+</html>

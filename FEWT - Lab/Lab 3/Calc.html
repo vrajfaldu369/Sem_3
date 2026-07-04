@@ -1,0 +1,38 @@
+<!-- WAP in JavaScript to make simple calculator using popup box. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <script>
+        let n1 = parseFloat(prompt("Enter 1st Number: "));
+        let n2 = parseFloat(prompt("Enter 2nd Number"));
+
+        if (n1 > n2) {
+            let a = prompt("Which op");
+            if(a == '+'){
+                alert("Add: "+(n1+n2));
+            }
+            else if(a == '-'){
+                alert("Subtract: "+(n1-n2));
+            }
+            else if(a == '*'){
+                alert("Multiply: "+(n1*n2));
+            }
+            else if(a == '/'){
+                alert("Divide: "+(n1/n2));
+            }
+            else{
+                alert("Invalid");
+            }
+        }
+        else{
+            alert("1st Number should be greater");
+        }
+    </script>
+</body>
+</html>
