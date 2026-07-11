@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>let var demo</title>
+</head>
+<body>
+    <script>
+        a = 10;
+        function abc(){
+            var a = 20
+            document.write("var a: "+a+"<br/>")
+            if(true){
+                let a = 30
+                document.write("let a: "+a+"<br/>")
+            }
+        }
+        document.write("no scoped a: "+a+"<br/>")
+
+        abc()
+    </script>
+</body>
+</html>
