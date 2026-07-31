@@ -1,0 +1,45 @@
+body {
+    font-family: Arial;
+    margin: 40px;
+    background: radial-gradient(circle, rgb(240, 248, 255), rgb(119, 131, 141));
+}
+
+input {
+    padding: 8px;
+    width: 220px;
+}
+
+button {
+    padding: 8px 15px;
+    cursor: pointer;
+    margin-left: 5px;
+    background: linear-gradient(rgb(127, 255, 212), rgb(59, 199, 153));
+    background-color: aquamarine;
+    transition: 1s;
+}
+
+button:hover {
+    transform: scale(1.2);
+}
+
+table {
+    border-collapse: collapse;
+    width: 400px;
+    margin-top: 20px;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background: linear-gradient(rgb(54, 100, 184), rgb(119, 159, 235));
+}
